@@ -6,5 +6,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="cancel">Cancel</string>
     <string name="edit">Edit</string>
+    <string name="add_user">Add User</string>
+    <string name="view_all">View All</string>
+    <string name="save_updates">Save Updates</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="name">Name</string>
+    <string name="user_application">User Application</string>
 
 </resources>

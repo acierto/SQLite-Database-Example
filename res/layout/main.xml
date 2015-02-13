@@ -13,13 +13,13 @@
 
         <Button
             android:id="@+id/add_btn"
-            android:layout_width="match_parent"
+            android:layout_width="0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#000000"
             android:clickable="false"
             android:focusable="false"
-            android:text="Add User"
+            android:text="@string/add_user"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
