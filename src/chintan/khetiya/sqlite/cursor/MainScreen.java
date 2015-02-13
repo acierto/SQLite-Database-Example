@@ -107,8 +107,8 @@ public class MainScreen extends Activity {
                 holder.name = (TextView) row.findViewById(R.id.user_name_txt);
                 holder.email = (TextView) row.findViewById(R.id.user_email_txt);
                 holder.number = (TextView) row.findViewById(R.id.user_mob_txt);
-                holder.edit = (Button) row.findViewById(R.id.btn_update);
-                holder.delete = (Button) row.findViewById(R.id.btn_delete);
+                holder.edit = (ImageButton) row.findViewById(R.id.btn_update);
+                holder.delete = (ImageButton) row.findViewById(R.id.btn_delete);
                 row.setTag(holder);
             } else {
                 holder = (UserHolder) row.getTag();
@@ -162,11 +162,11 @@ public class MainScreen extends Activity {
         }
 
         class UserHolder {
-            TextView name;
-            TextView email;
-            TextView number;
-            Button edit;
-            Button delete;
+            private TextView name;
+            private TextView email;
+            private TextView number;
+            private ImageButton edit;
+            private ImageButton delete;
         }
 
     }

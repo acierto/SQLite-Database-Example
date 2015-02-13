@@ -47,28 +47,28 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="end"
             android:orientation="horizontal" >
 
-            <Button
+            <ImageButton
                 android:id="@+id/btn_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/edit"
+                android:src="@drawable/edit"
+                android:background="@android:color/transparent"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
-                android:text="" />
+                android:contentDescription="@string/edit"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/btn_delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/cancle"
+                android:src="@drawable/cancel"
+                android:background="@android:color/transparent"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
-                android:text="" />
+                android:contentDescription="@string/cancel"/>
         </LinearLayout>
     </LinearLayout>
 
