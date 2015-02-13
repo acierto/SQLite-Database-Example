@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.*;
-import chintan.khetiya.sqlite.cursor.R;
 
 import java.util.ArrayList;
 

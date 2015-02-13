@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import chintan.khetiya.sqlite.cursor.R;
 
 public class AddUpdateUser extends Activity {
 
@@ -202,7 +201,7 @@ public class AddUpdateUser extends Activity {
     }
 
     public boolean isValidEmail(EditText edt) {
-        if (!isEmailValid(edt.getText().toString())) {
+        if (!Validator.isEmailValid(edt.getText().toString())) {
             edt.setError("Invalid Email Address");
             validEmail = null;
         } else {
@@ -210,10 +209,6 @@ public class AddUpdateUser extends Activity {
         }
 
         return validEmail != null;
-    }
-
-    private boolean isEmailValid(CharSequence email) {
-        return email != null && email.length() > 0 && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 
     public boolean isValidPersonName(EditText edt) {

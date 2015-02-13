@@ -2,9 +2,9 @@ package com.vistula.voinov;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import chintan.khetiya.sqlite.cursor.R;
 
 import java.net.URL;
 
@@ -19,12 +19,14 @@ public class ImportUsers extends Activity {
         setContentView(R.layout.main);
 
         try {
-            new FetchUsersTask(this).execute(new URL(USER_CONTACTS_URL));
+            AsyncTask asyncTask = new FetchUsersTask(this).execute(new URL(USER_CONTACTS_URL));
+            asyncTask.get();
+            viewAll();
+
         } catch (Exception e) {
             Log.e(e.getMessage(), "" + e);
         }
 
-        viewAll();
     }
 
     private void viewAll() {

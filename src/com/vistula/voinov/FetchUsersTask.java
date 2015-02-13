@@ -24,10 +24,26 @@ public class FetchUsersTask extends AsyncTask<URL, String, String> {
 
     @Override
     protected void onPostExecute(String result) {
-
-        for (String userContact: result.split("\n")) {
-            String[] contact = userContact.split(",");
-            dbHandler.addContact(new Contact(contact[0], contact[1], contact[2]));
+        if (result != null && result.length() > 0) {
+            for (String userContact : result.split("\n")) {
+                String[] contact = userContact.split(",");
+                if (isValidContact(contact)) {
+                    dbHandler.addContact(new Contact(contact[0], contact[1], contact[2]));
+                }
+            }
         }
+    }
+
+    private boolean isValidContact(String[] contact) {
+        if (contact.length != 3) {
+            return false;
+        }
+        String name = contact[0];
+        String phoneNumber = contact[1];
+        String email = contact[2];
+
+        return Validator.isValidPersonName(name) &&
+                Validator.isEmailValid(email) &&
+                Validator.isValidPhoneNumber(phoneNumber);
     }
 }
