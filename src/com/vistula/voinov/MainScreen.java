@@ -64,23 +64,9 @@ public class MainScreen extends Activity {
         contactData.clear();
         DatabaseHandler db = new DatabaseHandler(this);
         ArrayList<Contact> contacts = db.getContacts();
-
-        for (Contact contact : contacts) {
-
-            int tidno = contact.getID();
-            String name = contact.getName();
-            String mobile = contact.getPhoneNumber();
-            String email = contact.getEmail();
-            Contact cnt = new Contact();
-            cnt.setID(tidno);
-            cnt.setName(name);
-            cnt.setEmail(email);
-            cnt.setPhoneNumber(mobile);
-
-            contactData.add(cnt);
-        }
         db.close();
-        ContactAdapter cAdapter = new ContactAdapter(MainScreen.this, R.layout.listview_row, contactData);
+
+        ContactAdapter cAdapter = new ContactAdapter(MainScreen.this, R.layout.listview_row, contacts);
         contactListView.setAdapter(cAdapter);
         cAdapter.notifyDataSetChanged();
     }
@@ -89,7 +75,6 @@ public class MainScreen extends Activity {
     public void onResume() {
         super.onResume();
         refreshData();
-
     }
 
     public class ContactAdapter extends ArrayAdapter<Contact> {

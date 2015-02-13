@@ -1,7 +1,5 @@
 package com.vistula.voinov;
 
-import android.widget.EditText;
-
 public class Validator {
 
     public static boolean isValidPersonName(String value) {
