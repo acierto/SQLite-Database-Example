@@ -27,11 +27,7 @@
             android:name=".AddUpdateUser"
             android:configChanges="orientation"
             android:label="@string/app_name" />
-        <activity
-            android:name=".MyBlog"
-            android:configChanges="orientation"
-            android:label="@string/app_name" />
-        
+
     </application>
 
 </manifest>

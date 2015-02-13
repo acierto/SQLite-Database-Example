@@ -13,12 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class AddUpdateUser extends Activity {
-    EditText addName, addMobile, addEmail;
-    Button add_save_btn, add_view_all, update_btn, update_view_all;
-    LinearLayout addView, updateView;
-    String valid_mob_number = null, valid_email = null, valid_name = null, Toast_msg = null;
-    int USER_ID;
-    DatabaseHandler dbHandler = new DatabaseHandler(this);
+
+    private EditText addName, addMobile, addEmail;
+    private Button addSaveBtn, addViewAll, updateBtn, updateViewAll;
+    private LinearLayout addView, updateView;
+    private String validMobileNumber = null, validEmail = null, validName = null, toastMessage = null;
+    private int USER_ID;
+    private DatabaseHandler dbHandler = new DatabaseHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,77 +95,76 @@ public class AddUpdateUser extends Activity {
             }
         });
 
-        add_save_btn.setOnClickListener(new View.OnClickListener() {
+        addSaveBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if (valid_name != null && valid_mob_number != null
-                        && valid_email != null && valid_name.length() != 0
-                        && valid_mob_number.length() != 0
-                        && valid_email.length() != 0) {
+                if (validName != null && validMobileNumber != null
+                        && validEmail != null && validName.length() != 0
+                        && validMobileNumber.length() != 0
+                        && validEmail.length() != 0) {
 
-                    dbHandler.Add_Contact(new Contact(valid_name,
-                            valid_mob_number, valid_email));
-                    Toast_msg = "Data inserted successfully";
-                    showToast(Toast_msg);
+                    dbHandler.Add_Contact(new Contact(validName,
+                            validMobileNumber, validEmail));
+                    toastMessage = "Data inserted successfully";
+                    showToast(toastMessage);
                     resetText();
-
+                    finish();
                 }
 
             }
         });
 
-        update_btn.setOnClickListener(new View.OnClickListener() {
+        updateBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                valid_name = addName.getText().toString();
-                valid_mob_number = addMobile.getText().toString();
-                valid_email = addEmail.getText().toString();
+                validName = addName.getText().toString();
+                validMobileNumber = addMobile.getText().toString();
+                validEmail = addEmail.getText().toString();
 
-                // check the value state is null or not
-                if (valid_name != null && valid_mob_number != null
-                        && valid_email != null && valid_name.length() != 0
-                        && valid_mob_number.length() != 0
-                        && valid_email.length() != 0) {
-
-                    dbHandler.UpdateContact(new Contact(USER_ID, valid_name,
-                            valid_mob_number, valid_email));
+                if (isValid(validName) && isValid(validMobileNumber) && isValid(validEmail)) {
+                    dbHandler.updateContact(new Contact(USER_ID, validName, validMobileNumber, validEmail));
                     dbHandler.close();
-                    Toast_msg = "Data Update successfully";
-                    showToast(Toast_msg);
-                    resetText();
+                    toastMessage = "Data Update successfully";
+                    showToast(toastMessage);
+                    viewAll();
                 } else {
-                    Toast_msg = "Sorry Some Fields are missing.\nPlease Fill up all.";
-                    showToast(Toast_msg);
+                    toastMessage = "Sorry Some Fields are missing.\nPlease Fill up all.";
+                    showToast(toastMessage);
                 }
 
             }
         });
-        update_view_all.setOnClickListener(new View.OnClickListener() {
+        updateViewAll.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent viewUser = new Intent(AddUpdateUser.this, MainScreen.class);
-                viewUser.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(viewUser);
-                finish();
+                viewAll();
             }
         });
 
-        add_view_all.setOnClickListener(new View.OnClickListener() {
+        addViewAll.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent view_user = new Intent(AddUpdateUser.this, MainScreen.class);
-                view_user.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(view_user);
-                finish();
+                viewAll();
             }
         });
-
     }
+
+    private boolean isValid(String field) {
+        return field != null && field.length() > 0;
+    }
+
+    private void viewAll() {
+        Intent viewUser = new Intent(AddUpdateUser.this, MainScreen.class);
+        viewUser.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(viewUser);
+        finish();
+    }
+
 
     public void addUpdateScreen() {
 
@@ -172,10 +172,10 @@ public class AddUpdateUser extends Activity {
         addMobile = (EditText) findViewById(R.id.add_mobile);
         addEmail = (EditText) findViewById(R.id.add_email);
 
-        add_save_btn = (Button) findViewById(R.id.add_save_btn);
-        update_btn = (Button) findViewById(R.id.update_btn);
-        add_view_all = (Button) findViewById(R.id.add_view_all);
-        update_view_all = (Button) findViewById(R.id.update_view_all);
+        addSaveBtn = (Button) findViewById(R.id.add_save_btn);
+        updateBtn = (Button) findViewById(R.id.update_btn);
+        addViewAll = (Button) findViewById(R.id.add_view_all);
+        updateViewAll = (Button) findViewById(R.id.update_view_all);
 
         addView = (LinearLayout) findViewById(R.id.add_view);
         updateView = (LinearLayout) findViewById(R.id.update_view);
@@ -189,17 +189,17 @@ public class AddUpdateUser extends Activity {
                                             EditText edt) throws NumberFormatException {
         if (edt.getText().toString().length() <= 0) {
             edt.setError("Number Only");
-            valid_mob_number = null;
+            validMobileNumber = null;
         } else if (edt.getText().toString().length() < MinLen) {
             edt.setError("Minimum length " + MinLen);
-            valid_mob_number = null;
+            validMobileNumber = null;
 
         } else if (edt.getText().toString().length() > MaxLen) {
             edt.setError("Maximum length " + MaxLen);
-            valid_mob_number = null;
+            validMobileNumber = null;
 
         } else {
-            valid_mob_number = edt.getText().toString();
+            validMobileNumber = edt.getText().toString();
 
         }
 
@@ -208,9 +208,9 @@ public class AddUpdateUser extends Activity {
     public void isValidEmail(EditText edt) {
         if (!isEmailValid(edt.getText().toString())) {
             edt.setError("Invalid Email Address");
-            valid_email = null;
+            validEmail = null;
         } else {
-            valid_email = edt.getText().toString();
+            validEmail = edt.getText().toString();
         }
     }
 
@@ -221,12 +221,12 @@ public class AddUpdateUser extends Activity {
     public void isValidPersonName(EditText edt) throws NumberFormatException {
         if (edt.getText().toString().length() <= 0) {
             edt.setError("Accept Alphabets Only.");
-            valid_name = null;
+            validName = null;
         } else if (!edt.getText().toString().matches("[a-zA-Z ]+")) {
             edt.setError("Accept Alphabets Only.");
-            valid_name = null;
+            validName = null;
         } else {
-            valid_name = edt.getText().toString();
+            validName = edt.getText().toString();
         }
 
     }

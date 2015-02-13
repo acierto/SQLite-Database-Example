@@ -32,7 +32,6 @@ public class MainScreen extends Activity {
             refreshData();
 
         } catch (Exception e) {
-            // TODO: handle exception
             Log.e("some error", "" + e);
         }
         addBtn.setOnClickListener(new View.OnClickListener() {
@@ -47,11 +46,6 @@ public class MainScreen extends Activity {
             }
         });
 
-    }
-
-    public void callMyBlog(View v) {
-        Intent intent = new Intent(MainScreen.this, MyBlog.class);
-        startActivity(intent);
     }
 
     public void refreshData() {

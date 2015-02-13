@@ -101,7 +101,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return contactList;
     }
 
-    public int UpdateContact(Contact contact) {
+    public int updateContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
