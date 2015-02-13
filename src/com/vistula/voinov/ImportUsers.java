@@ -1,8 +1,9 @@
-package chintan.khetiya.sqlite.cursor;
+package com.vistula.voinov;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import chintan.khetiya.sqlite.cursor.R;
 
 public class ImportUsers extends Activity {
 

@@ -1,4 +1,4 @@
-package chintan.khetiya.sqlite.cursor;
+package com.vistula.voinov;
 
 public class Contact {
 

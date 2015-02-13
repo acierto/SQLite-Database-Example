@@ -1,4 +1,4 @@
-package chintan.khetiya.sqlite.cursor;
+package com.vistula.voinov;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import chintan.khetiya.sqlite.cursor.R;
 
 public class AddUpdateUser extends Activity {
 

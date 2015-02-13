@@ -1,4 +1,4 @@
-package chintan.khetiya.sqlite.cursor;
+package com.vistula.voinov;
 
 import android.content.ContentValues;
 import android.content.Context;
