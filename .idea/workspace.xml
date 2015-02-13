@@ -18,23 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d69445-828f-4b02-a50d-1025299d3715" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Add_Update_User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$Contact_Adapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$Contact_Adapter$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$Contact_Adapter$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$Contact_Adapter$UserHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen$Contact_Adapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Main_Screen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/My_Blog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MyBlog.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Contact.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Contact.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/DatabaseHandler.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/DatabaseHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$id.class" />
@@ -45,12 +28,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.apk" afterPath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.unaligned.apk" afterPath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" afterPath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" afterPath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java" afterPath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SQLite-Database-Example.iws" />
@@ -119,6 +97,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DatabaseHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3802817" vertical-offset="651" max-vertical-offset="2460">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="2460">
+              <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,13 +209,13 @@
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/Main_Screen.java" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/Contact.java" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MyBlog.java" />
         <option value="$PROJECT_DIR$/bin/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -848,12 +836,19 @@
       <updated>1423781924161</updated>
       <workItem from="1423781925631" duration="1333000" />
       <workItem from="1423814743038" duration="128000" />
-      <workItem from="1423835313307" duration="1058000" />
+      <workItem from="1423835313307" duration="1095000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixes">
+      <created>1423836380420</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1423836380420</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2519000" />
+    <option name="totallyTimeSpent" value="2556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
@@ -907,6 +902,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1120,14 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../sdk/android-sdk-macosx/sources/android-17/android/widget/EditText.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="1410">
@@ -1222,11 +1211,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3802817" vertical-offset="651" max-vertical-offset="2460">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="2460">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
