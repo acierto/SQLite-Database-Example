@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainScreen extends Activity {
 
-    private Button addBtn;
+    private Button addBtn, importBtn;
     private ListView contactListView;
     private ArrayList<Contact> contactData = new ArrayList<Contact>();
 
@@ -28,6 +28,7 @@ public class MainScreen extends Activity {
             contactListView = (ListView) findViewById(R.id.list);
             contactListView.setItemsCanFocus(false);
             addBtn = (Button) findViewById(R.id.add_btn);
+            importBtn = (Button) findViewById(R.id.import_btn);
 
             refreshData();
 
@@ -42,6 +43,17 @@ public class MainScreen extends Activity {
                 addUser.putExtra("called", "add");
                 addUser.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(addUser);
+                finish();
+            }
+        });
+
+        importBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent importUsers = new Intent(MainScreen.this, ImportUsers.class);
+                importUsers.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(importUsers);
                 finish();
             }
         });

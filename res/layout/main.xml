@@ -12,10 +12,21 @@
         android:weightSum="1" >
 
         <Button
-            android:id="@+id/add_btn"
-            android:layout_width="0"
+            android:id="@+id/import_btn"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#000000"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/import_users"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:background="#000000"
             android:clickable="false"
             android:focusable="false"

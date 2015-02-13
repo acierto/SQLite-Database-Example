@@ -28,6 +28,11 @@
             android:configChanges="orientation"
             android:label="@string/app_name" />
 
+        <activity
+                android:name=".ImportUsers"
+                android:configChanges="orientation"
+                android:label="@string/app_name" />
+
     </application>
 
 </manifest>
