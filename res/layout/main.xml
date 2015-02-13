@@ -4,35 +4,39 @@
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#000000"
-        android:orientation="horizontal"
-        android:weightSum="1" >
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/import_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#000000"
-            android:clickable="false"
-            android:focusable="false"
-            android:text="@string/import_users"
-            android:textColor="#FFFFFF" />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="4.0dip"
+                android:background="#000000"
+                android:paddingTop="5.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="1.0dip"
+                android:layout_width="fill_parent" android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/add_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:background="#000000"
-            android:clickable="false"
-            android:focusable="false"
-            android:text="@string/add_user"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
+            <Button
+                    android:id="@+id/add_btn"
+                    android:layout_width="0.0dip"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="fill_parent"
+                    android:text="@string/add_user"
+                    android:layout_weight="1.0" />
+
+            <Button
+                    android:id="@+id/import_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/import_users"
+                    android:layout_weight="1.0" />
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
