@@ -1,0 +1,3 @@
+Denys,1 231-231-23,denys@gmail.com
+Vanya,4 444-441-00,vanya@gmail.com
+Anya,2 341-555-33,anya@gmail.com
