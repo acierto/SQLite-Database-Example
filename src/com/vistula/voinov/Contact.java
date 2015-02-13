@@ -10,7 +10,6 @@ public class Contact {
     public Contact() {
     }
 
-    // constructor
     public Contact(int id, String name, String phone_number, String email) {
         this.id = id;
         this.name = name;

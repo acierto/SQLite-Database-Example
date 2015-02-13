@@ -94,7 +94,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             db.close();
             return contactList;
         } catch (Exception e) {
-            // TODO: handle exception
             Log.e("all_contact", "" + e);
         }
 
