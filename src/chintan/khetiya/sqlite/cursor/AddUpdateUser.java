@@ -57,7 +57,7 @@ public class AddUpdateUser extends Activity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                isValidSignNumberValidation(12, 12, addMobile);
+                isValidMobileNumber(addMobile);
             }
         });
         addMobile
@@ -99,19 +99,12 @@ public class AddUpdateUser extends Activity {
 
             @Override
             public void onClick(View v) {
-                if (validName != null && validMobileNumber != null
-                        && validEmail != null && validName.length() != 0
-                        && validMobileNumber.length() != 0
-                        && validEmail.length() != 0) {
-
-                    dbHandler.Add_Contact(new Contact(validName,
-                            validMobileNumber, validEmail));
+                if (isValidFilledForm()) {
+                    dbHandler.addContact(new Contact(validName, validMobileNumber, validEmail));
                     toastMessage = "Data inserted successfully";
                     showToast(toastMessage);
-                    resetText();
-                    finish();
+                    viewAll();
                 }
-
             }
         });
 
@@ -124,7 +117,7 @@ public class AddUpdateUser extends Activity {
                 validMobileNumber = addMobile.getText().toString();
                 validEmail = addEmail.getText().toString();
 
-                if (isValid(validName) && isValid(validMobileNumber) && isValid(validEmail)) {
+                if (isValidFilledForm()) {
                     dbHandler.updateContact(new Contact(USER_ID, validName, validMobileNumber, validEmail));
                     dbHandler.close();
                     toastMessage = "Data Update successfully";
@@ -142,6 +135,7 @@ public class AddUpdateUser extends Activity {
             @Override
             public void onClick(View v) {
                 viewAll();
+                finish();
             }
         });
 
@@ -150,19 +144,19 @@ public class AddUpdateUser extends Activity {
             @Override
             public void onClick(View v) {
                 viewAll();
+                finish();
             }
         });
     }
 
-    private boolean isValid(String field) {
-        return field != null && field.length() > 0;
+    private boolean isValidFilledForm() {
+        return isValidPersonName(addName) && isValidMobileNumber(addMobile) && isValidEmail(addEmail);
     }
 
     private void viewAll() {
         Intent viewUser = new Intent(AddUpdateUser.this, MainScreen.class);
         viewUser.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(viewUser);
-        finish();
     }
 
 
@@ -185,40 +179,43 @@ public class AddUpdateUser extends Activity {
 
     }
 
-    public void isValidSignNumberValidation(int MinLen, int MaxLen,
-                                            EditText edt) throws NumberFormatException {
+    public boolean isValidMobileNumber(EditText edt) {
+        return isValidSignNumberValidation(12, 12, edt);
+    }
+
+    private boolean isValidSignNumberValidation(int MinLen, int MaxLen, EditText edt) {
         if (edt.getText().toString().length() <= 0) {
             edt.setError("Number Only");
             validMobileNumber = null;
         } else if (edt.getText().toString().length() < MinLen) {
             edt.setError("Minimum length " + MinLen);
             validMobileNumber = null;
-
         } else if (edt.getText().toString().length() > MaxLen) {
             edt.setError("Maximum length " + MaxLen);
             validMobileNumber = null;
-
         } else {
             validMobileNumber = edt.getText().toString();
-
         }
 
-    } // END OF Edittext validation
+        return validMobileNumber != null;
+    }
 
-    public void isValidEmail(EditText edt) {
+    public boolean isValidEmail(EditText edt) {
         if (!isEmailValid(edt.getText().toString())) {
             edt.setError("Invalid Email Address");
             validEmail = null;
         } else {
             validEmail = edt.getText().toString();
         }
+
+        return validEmail != null;
     }
 
-    boolean isEmailValid(CharSequence email) {
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    } // end of email matcher
+    private boolean isEmailValid(CharSequence email) {
+        return email != null && email.length() > 0 && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
 
-    public void isValidPersonName(EditText edt) throws NumberFormatException {
+    public boolean isValidPersonName(EditText edt) {
         if (edt.getText().toString().length() <= 0) {
             edt.setError("Accept Alphabets Only.");
             validName = null;
@@ -229,16 +226,11 @@ public class AddUpdateUser extends Activity {
             validName = edt.getText().toString();
         }
 
+        return validName != null;
     }
 
     public void showToast(String msg) {
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-    }
-
-    public void resetText() {
-        addName.getText().clear();
-        addMobile.getText().clear();
-        addEmail.getText().clear();
     }
 
 }

@@ -18,17 +18,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d69445-828f-4b02-a50d-1025299d3715" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Contact.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/Contact.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/DatabaseHandler.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/DatabaseHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$menu.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R.class" afterPath="$PROJECT_DIR$/bin/classes/chintan/khetiya/sqlite/cursor/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.apk" afterPath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.unaligned.apk" afterPath="$PROJECT_DIR$/bin/classes/SQLiteDatabase.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" afterPath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" afterPath="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SQLite-Database-Example.iws" />
@@ -55,23 +49,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddUpdateUser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddUpdateUser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
-              <caret line="162" column="47" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
+            <state vertical-scroll-proportion="1.1851107" vertical-offset="2786" max-vertical-offset="3540">
+              <caret line="231" column="39" selection-start-line="231" selection-start-column="39" selection-end-line="231" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3172#3862#0" expanded="true" />
-                <element signature="e#3861#3862#0" expanded="true" />
-                <element signature="e#3903#4769#0" expanded="true" />
-                <element signature="e#4768#4769#0" expanded="true" />
-                <element signature="e#4999#5143#0" expanded="true" />
-                <element signature="e#5142#5143#0" expanded="true" />
-                <element signature="e#5195#5196#0" expanded="true" />
-                <element signature="e#5253#5254#0" expanded="true" />
-                <element signature="e#7853#7854#0" expanded="true" />
-                <element signature="e#7939#7940#0" expanded="true" />
+                <element signature="e#3156#3572#0" expanded="true" />
+                <element signature="e#3571#3572#0" expanded="true" />
+                <element signature="e#3613#4427#0" expanded="true" />
+                <element signature="e#4426#4427#0" expanded="true" />
+                <element signature="e#4471#4641#0" expanded="true" />
+                <element signature="e#4640#4641#0" expanded="true" />
+                <element signature="e#4683#4853#0" expanded="true" />
+                <element signature="e#4852#4853#0" expanded="true" />
+                <element signature="e#6005#6006#0" expanded="true" />
+                <element signature="e#6068#6069#0" expanded="true" />
+                <element signature="e#7809#7810#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding />
             </state>
@@ -110,7 +105,7 @@
       <file leaf-file-name="DatabaseHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1890">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1890">
               <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,8 +117,8 @@
       <file leaf-file-name="MainScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="2460">
-              <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2460">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,7 +142,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
@@ -167,8 +162,8 @@
       <file leaf-file-name="add_update_screen.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/add_update_screen.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.133333" vertical-offset="1061" max-vertical-offset="1785">
-              <caret line="101" column="44" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="44" />
+            <state vertical-scroll-proportion="-9.133333" vertical-offset="1061" max-vertical-offset="1785">
+              <caret line="89" column="39" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -210,12 +205,12 @@
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/Contact.java" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MyBlog.java" />
         <option value="$PROJECT_DIR$/bin/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java" />
       </list>
     </option>
   </component>
@@ -836,7 +831,7 @@
       <updated>1423781924161</updated>
       <workItem from="1423781925631" duration="1333000" />
       <workItem from="1423814743038" duration="128000" />
-      <workItem from="1423835313307" duration="1095000" />
+      <workItem from="1423835313307" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary="Fixes">
       <created>1423836380420</created>
@@ -844,11 +839,17 @@
       <option name="project" value="LOCAL" />
       <updated>1423836380420</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixes">
+      <created>1423836414858</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1423836414858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2556000" />
+    <option name="totallyTimeSpent" value="3720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
@@ -874,7 +875,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23785166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897698" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -906,7 +907,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -920,16 +923,17 @@
           <caret line="127" column="27" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3172#3862#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3903#4769#0" expanded="true" />
-            <element signature="e#4768#4769#0" expanded="true" />
-            <element signature="e#4999#5143#0" expanded="true" />
-            <element signature="e#5142#5143#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-            <element signature="e#5253#5254#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#7939#7940#0" expanded="true" />
+            <element signature="e#3156#3572#0" expanded="true" />
+            <element signature="e#3571#3572#0" expanded="true" />
+            <element signature="e#3613#4427#0" expanded="true" />
+            <element signature="e#4426#4427#0" expanded="true" />
+            <element signature="e#4471#4641#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+            <element signature="e#4683#4853#0" expanded="true" />
+            <element signature="e#4852#4853#0" expanded="true" />
+            <element signature="e#6005#6006#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#7809#7810#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1008,16 +1012,17 @@
           <caret line="127" column="27" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3172#3862#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3903#4769#0" expanded="true" />
-            <element signature="e#4768#4769#0" expanded="true" />
-            <element signature="e#4999#5143#0" expanded="true" />
-            <element signature="e#5142#5143#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-            <element signature="e#5253#5254#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#7939#7940#0" expanded="true" />
+            <element signature="e#3156#3572#0" expanded="true" />
+            <element signature="e#3571#3572#0" expanded="true" />
+            <element signature="e#3613#4427#0" expanded="true" />
+            <element signature="e#4426#4427#0" expanded="true" />
+            <element signature="e#4471#4641#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+            <element signature="e#4683#4853#0" expanded="true" />
+            <element signature="e#4852#4853#0" expanded="true" />
+            <element signature="e#6005#6006#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#7809#7810#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1125,16 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.0" vertical-offset="0" max-vertical-offset="660">
@@ -1154,49 +1149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/add_update_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.133333" vertical-offset="1061" max-vertical-offset="1785">
-          <caret line="101" column="44" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
-          <caret line="162" column="47" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3172#3862#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3903#4769#0" expanded="true" />
-            <element signature="e#4768#4769#0" expanded="true" />
-            <element signature="e#4999#5143#0" expanded="true" />
-            <element signature="e#5142#5143#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-            <element signature="e#5253#5254#0" expanded="true" />
-            <element signature="e#7853#7854#0" expanded="true" />
-            <element signature="e#7939#7940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="570">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1211,8 +1167,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/MainScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="2460">
-          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2460">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="570">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/add_update_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.133333" vertical-offset="1061" max-vertical-offset="1785">
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1221,9 +1206,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chintan/khetiya/sqlite/cursor/AddUpdateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1851107" vertical-offset="2786" max-vertical-offset="3540">
+          <caret line="231" column="39" selection-start-line="231" selection-start-column="39" selection-end-line="231" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3156#3572#0" expanded="true" />
+            <element signature="e#3571#3572#0" expanded="true" />
+            <element signature="e#3613#4427#0" expanded="true" />
+            <element signature="e#4426#4427#0" expanded="true" />
+            <element signature="e#4471#4641#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+            <element signature="e#4683#4853#0" expanded="true" />
+            <element signature="e#4852#4853#0" expanded="true" />
+            <element signature="e#6005#6006#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#7809#7810#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
